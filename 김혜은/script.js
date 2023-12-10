@@ -2,7 +2,6 @@ var currentCardIndex = 0;
 var cardData = [
   { word: "한자1", meaning: "뜻1" },
   { word: "한자2", meaning: "뜻2" },
-  // Add more words and meanings as needed
 ];
 
 function updateCard() {
@@ -22,7 +21,6 @@ function flipCard() {
 function nextCard() {
   currentCardIndex = (currentCardIndex + 1) % cardData.length;
   updateCard();
-  // Reset card rotation to front
   var cardInner = document.querySelector(".card-inner");
   cardInner.style.transform = "rotateY(0deg)";
 }
@@ -30,10 +28,8 @@ function nextCard() {
 function prevCard() {
   currentCardIndex = (currentCardIndex - 1 + cardData.length) % cardData.length;
   updateCard();
-  // Reset card rotation to front
   var cardInner = document.querySelector(".card-inner");
   cardInner.style.transform = "rotateY(0deg)";
 }
 
-// Initial card setup
 updateCard();

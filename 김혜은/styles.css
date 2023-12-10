@@ -42,7 +42,7 @@ body {
 }
 
 .card-back {
-  background-color: #2ecc71;
+  background-color: #ffc156;
   color: #fff;
   transform: rotateY(180deg);
 }
