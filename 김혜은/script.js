@@ -2,6 +2,9 @@ var currentCardIndex = 0;
 var cardData = [
   { word: "한자1", meaning: "뜻1" },
   { word: "한자2", meaning: "뜻2" },
+  { word: "한자3", meaning: "뜻3" },
+  { word: "한자4", meaning: "뜻4" },
+  { word: "한자5", meaning: "뜻5" },
 ];
 
 function updateCard() {
