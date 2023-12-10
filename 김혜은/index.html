@@ -9,10 +9,12 @@
   <body>
     <div class="card" onclick="flipCard()">
       <div class="card-inner">
-        <div class="card-front">단어</div>
-        <div class="card-back">뜻</div>
+        <div class="card-front" id="word">단어</div>
+        <div class="card-back" id="meaning">뜻</div>
       </div>
     </div>
+    <div id="nextCardBtn" onclick="nextCard()">Next Card</div>
+    <div id="prevCardBtn" onclick="prevCard()">Previous Card</div>
     <script src="script.js"></script>
   </body>
 </html>

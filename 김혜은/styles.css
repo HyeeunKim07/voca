@@ -42,7 +42,34 @@ body {
 }
 
 .card-back {
-  background-color: #2ecc71;
+  background-color: #ffc156;
   color: #fff;
   transform: rotateY(180deg);
+}
+
+#nextCardBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+}
+
+#prevCardBtn {
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+}
+
+#nextCardBtn {
+  right: 10px;
+}
+
+#prevCardBtn {
+  left: 10px;
 }
