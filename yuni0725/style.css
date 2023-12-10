@@ -21,25 +21,53 @@ body {
 }
 
 .word_container {
-  background-color: green; /*transparent*/
+  background-color: transparent;
   height: 70vh;
   width: 60vw;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  perspective: 1000px;
 }
 
 .word {
-  background-color: tomato;
-  border: 1px solid black;
-
-  height: inherit;
   width: inherit;
+  height: inherit;
 
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: 0.5s;
+}
+
+.word__front,
+.word__back {
+  border: 1px solid black;
   border-radius: 50px;
+
+  width: inherit;
+  height: inherit;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: absolute;
+
+  backface-visibility: hidden;
+}
+
+.word__front {
+  background-color: tomato;
+}
+
+.word__back {
+  background-color: aqua;
+  transform: rotateY(180deg);
+}
+
+.flip_card {
+  transform: rotateY(-180deg);
 }
