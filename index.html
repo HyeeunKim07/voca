@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>voca</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card" onclick="flipCard()">
+      <div class="card-inner">
+        <div class="card-front" id="word">단어</div>
+        <div class="card-back" id="meaning">뜻</div>
+      </div>
+    </div>
+    <div id="nextCardBtn" onclick="nextCard()">Next Card</div>
+    <div id="prevCardBtn" onclick="prevCard()">Previous Card</div>
+    <script src="script.js"></script>
+  </body>
+</html>
