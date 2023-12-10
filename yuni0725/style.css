@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container div {
+  margin: 0px 10vw;
+}
+
+.word_container {
+  position: relative;
+}
+
+.word {
+  position: absolute;
+  background-color: tomato;
+  border: 1px solid black;
+}
