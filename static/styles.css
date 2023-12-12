@@ -34,6 +34,8 @@ body {
   justify-content: center;
   position: absolute;
   backface-visibility: hidden;
+
+  font-size: 25px;
 }
 
 .card-front {
@@ -55,6 +57,9 @@ body {
   padding: 10px;
   background-color: #3498db;
   color: #fff;
+
+  width: 15vw;
+  text-align: center;
 }
 
 #prevCardBtn {
@@ -64,6 +69,9 @@ body {
   padding: 10px;
   background-color: #3498db;
   color: #fff;
+
+  width: 15vw;
+  text-align: center;
 }
 
 #nextCardBtn {

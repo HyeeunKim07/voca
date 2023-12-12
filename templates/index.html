@@ -4,17 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>voca</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles.css')}}"
+    />
   </head>
   <body>
-    <div class="card" onclick="flipCard()">
+    <div id="card" class="card">
       <div class="card-inner">
-        <div class="card-front" id="word">단어</div>
-        <div class="card-back" id="meaning">뜻</div>
+        <div class="card-front" id="word"></div>
+        <div class="card-back" id="meaning"></div>
       </div>
     </div>
-    <div id="nextCardBtn" onclick="nextCard()">Next Card</div>
-    <div id="prevCardBtn" onclick="prevCard()">Previous Card</div>
-    <script src="script.js"></script>
+    <div id="nextCardBtn">Next Card</div>
+    <div id="prevCardBtn">Previous Card</div>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='script.js') }}"
+    ></script>
   </body>
 </html>
