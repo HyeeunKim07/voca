@@ -7,6 +7,8 @@ def get_voca_data():
 
     import json
 
+    import random
+
     voca_list = []
 
     def make_text_clean(text : str):
@@ -41,6 +43,7 @@ def get_voca_data():
                     "meaning" : meaning
                 })
 
+    random.shuffle(voca_list)
 
     json_voca_list = json.dumps(voca_list, ensure_ascii=False)
 
